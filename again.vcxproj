@@ -89,7 +89,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>C:\dev\vst_sdk2_4\vstsdk2.4 - Copy\public.sdk\source\vst2.x;C:\dev\vst_sdk2_4\vstsdk2.4 - Copy\pluginterfaces\vst2.x;C:\dev\vst_sdk2_4\vstsdk2.4 - Copy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\dev\vst_sdk2_4\vstsdk2.4 - Copy\public.sdk\source\vst2.x;E:\dev\vst_sdk2_4\vstsdk2.4 - Copy\pluginterfaces\vst2.x;E:\dev\vst_sdk2_4\vstsdk2.4 - Copy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;AGAIN_EXPORTS;_CRT_SECURE_NO_DEPRECATE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -104,7 +104,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
-      <OutputFile>$(OutDir)PluginName.Intercept.1234567890$(TargetExt)</OutputFile>
+      <OutputFile>c:\program files\vstplugins\Nexus.Intercept.1234567890$(TargetExt)</OutputFile>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
@@ -115,7 +115,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>../../../../..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\dev\vst_sdk2_4\vstsdk2.4 - Copy\public.sdk\source\vst2.x;E:\dev\vst_sdk2_4\vstsdk2.4 - Copy\pluginterfaces\vst2.x;E:\dev\vst_sdk2_4\vstsdk2.4 - Copy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;AGAIN_EXPORTS;VST_64BIT_PLATFORM=1;_CRT_SECURE_NO_DEPRECATE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -125,10 +125,12 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Link>
-      <ModuleDefinitionFile>../../win/vstplug.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX64</TargetMachine>
+      <OutputFile>c:\program files\vstplugins\Nexus.Intercept.1234567890$(TargetExt)</OutputFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -184,6 +186,9 @@
     <ClInclude Include="..\..\..\..\dev\vst_sdk2_4\vstsdk2.4 - Copy\public.sdk\source\vst2.x\aeffeditor.h" />
     <ClInclude Include="..\..\..\..\dev\vst_sdk2_4\vstsdk2.4 - Copy\public.sdk\source\vst2.x\audioeffect.h" />
     <ClInclude Include="..\..\..\..\dev\vst_sdk2_4\vstsdk2.4 - Copy\public.sdk\source\vst2.x\audioeffectx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="vstplug.def" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

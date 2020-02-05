@@ -43,4 +43,9 @@
       <Filter>Source Files\vst2.x</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="vstplug.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>
